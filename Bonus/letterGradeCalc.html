@@ -43,10 +43,79 @@
               C        70 - 79
               B        80 - 95
               A        90 - 100
-        */
-        if (condition) {
+        // */
+        // if (total <= 60) {
+        //   document.getElementById("status").innerHTML = "D";
+        // }
+        // else if (total >= 69) {
+        //   document.getElementById("status").innerHTML = "D";
+        // }
+        // else if (total <= 70) {
+        //   document.getElementById("status").innerHTML = "C";
+        // }
+        // else if (total >= 79) {
+        //   document.getElementById("status").innerHTML = "C";
+        // }
+        // else if (total <= 80) {
+        //   document.getElementById("status").innerHTML = "B";
+        // }
+        // else if (total >= 89) {
+        //   document.getElementById("status").innerHTML = "B";
+        // }
+        // else if (total <= 90) {
+        //   document.getElementById("status").innerHTML = "A";
+        // }
+        // else if (total >= 94.9) {
+        //   document.getElementById("status").innerHTML = "A";
+        // }
+        // else if (total <= 95) {
+        //   document.getElementById("status").innerHTML = "A+";
+        // }
+        // else if (total >= 99.9) {
+        //   document.getElementById("status").innerHTML = "A+";
+        // }
+        // else if (total == 100){
+        //   document.getElementById("status").innerHTML = "A++";
+        // }
+
+        //-----------------------------------------------------------
+         if (total <0 || total >100){
+          document.getElementById("status").innerHTML = "Error";
+        }
+        else if (total == 100 ) {
+          document.getElementById("status").innerHTML = "A++";
+        }
+        else if (total >= 95){
+          document.getElementById("status").innerHTML = "A+";
+        }
+        else if (total >= 90){
+          document.getElementById("status").innerHTML = "A";
+        }
+        else if (total >= 90){
+          document.getElementById("status").innerHTML = "B";
+        }
+        else if (total >= 80){
+          document.getElementById("status").innerHTML = "B";
+        }
+        else if (total >= 80){
+          document.getElementById("status").innerHTML = "C";
+        }
+        else if (total >=  70){
+          document.getElementById("status").innerHTML = "C";
+        }
+        else if (total >= 70){
           document.getElementById("status").innerHTML = "D";
         }
+        else if (total >=  60){
+          document.getElementById("status").innerHTML = "D";
+        }
+        else if (total >= 60){
+          document.getElementById("status").innerHTML = "F";
+        }
+        else if (total >= 0){
+          document.getElementById("status").innerHTML = "F";
+        }
+        
         // أكمل
       }
     </script>
